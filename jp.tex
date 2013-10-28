@@ -1,0 +1,242 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{classic}                       % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage{CJKutf8}
+
+% 调整页面出血
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+% 个人信息
+\firstname{Juanjie}
+\familyname{Xi}
+\title{Curriculum Vitae}                    % 可选项、如不需要可删除本行
+%\address{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}{XXXXXXXXXXXXXXXXXXXXXX}      % 可选项、如不需要可删除本行
+%\mobile{XXXXXXXXXXXXXXXXXXX}                  % 可选项、如不需要可删除本行
+\address{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}{XXXXXXXXXXXXXXXXXXXXXXX}      % 可选项、如不需要可删除本行
+\mobile{XXXXXXXXXXXXXXXXXXX}                  % 可选项、如不需要可删除本行
+%\phone{XXXXXXXXXXXXXXXXXX}                   % 可选项、如不需要可删除本行
+%\fax{XXXXXXXXXXXXXXXX}                       % 可选项、如不需要可删除本行
+\email{XXXXXXXXXXXXXXXXXXXX}                  % 可选项、如不需要可删除本行
+%\homepage{XXXXXXXXXXXXX}                      % 可选项、如不需要可删除本行
+%\extrainfo{附加信息 (可选项)}                % 可选项、如不需要可删除本行
+\photo[64pt][0.4pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+\quote{Summary\newline{}
+\small
+\begin{itemize}
+\item 10 years experience in software engineering.
+\item Trilingual, speek Chinese, Japanese and English.
+\item Management experience for a 12 person group.
+\item Good skill at c/c++, Perl, Linux/Unix system admin.
+\item Strong domain knowledge in e-mail system.
+\item Experience in the game industry.
+\item Very well team work spirit.
+\end{itemize}
+\normalsize
+}                         % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+\maketitle
+
+\section{Info}
+\cvline{Birth}{\small Aug 28th, 1982 (Shanghai)\normalsize}
+\cvline{Citizenship}{\small Chinese\normalsize}
+\cvline{LinkedIn}{\small \url{http://cn.linkedin.com/in/xijuanjie}\normalsize}
+%\cvline{Blog}{\small \url{<Link to profile>}\normalsize}
+%\cvline{Skype}{\small <skype>\normalsize}
+
+\section{Experience}
+\cventry{Jan 2011 - Present}{Software Engineer}{HP}{Tokyo/Shanghai}{}{}
+\cventry{Oct 2007 - Dec 2010}{Programmer}{From Software}{Tokyo}{Japan}{}
+\cventry{Jul 2004 - Aug 2007}{Software Engineer}{Venus Software}{Shanghai}{China}{}
+
+\section{Computer Skills}
+\cvcomputer{Languages}{c, c++, Perl, common lisp, php}{DB}{Sqlite, Mysql, MariaDB}
+\cvcomputer{Platforms}{Debian, Redhat, Gentoo, HP-UX, Mac os x, Windows, Apache, Nginx}{Tools}{vim, eclpise, clang, make, git, Mercurial, SVN, *nix binutils}
+
+\section{Education}
+\cventry{2000 - 2004}{Building Environment and Equipment Engineering}{Bachelor}{University of Shanghai for Science and Technology}{Shanghai}{}  % 第3到第6编码可留白
+\cventry{1996 - 2000}{Shanghai Jianshe high school}{}{}{Shanghai}{}  % 第3到第6编码可留白
+
+%\cventry{年 -- 年}{学位}{院校}{城市}{\textit{成绩}}{说明}
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+%Section
+\section{languages}
+
+\hspace{25mm}\small Self-assessment level from A to E (A maximum evaluation)\normalsize
+\vspace{5mm}
+
+\begin{tabular}{p{67mm} p{40mm} p{40mm} p{20mm}}
+& \textbf{Understanding} & \textbf{Speaking} & \textbf{Writing} \\
+\end{tabular}
+
+\begin{tabular}{p{67mm} p{20mm} p{20mm} p{20mm} p{20mm} p{20mm}}
+& Listening & Reading & Interaction & Production & \\
+\end{tabular}
+
+\vspace{3mm}
+%lvl should be in this range A1 < A2 < B1 < B2 < C1 < C2
+\cvlanguage{Chinese}{native}{
+	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+		A & A & A & A & A
+	\end{tabular}}
+\cvlanguage{Japanese}{bilingual}{
+	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+		A & A & A & B & B
+	\end{tabular}}
+\cvlanguage{English}{working proficiency}{
+	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+		B & B & C & C & B
+	\end{tabular}}
+
+\section{Certifications}
+\cvitemwithcomment{LPIC Level1}{}{December 2009}
+\cvitemwithcomment{LPIC Level2}{}{March 2013}
+\cvitemwithcomment{Senior Programmer}{(China national certification)}{October 2006}
+\cvitemwithcomment{JLPT 1}{}{August 2007}
+%\cvline{LPIC Level1}{December 2009}
+%\cvline{LPIC Level2}{March 2013}
+%\cvline{Senior Programmer}{October 2006}
+%\cvline{JLPT 1}{August 2007}
+
+\section{Test Scores}
+\cvline{TOEIC}{765}
+
+\section{Projects}
+\subsection{@HP}
+\cventry{Jan 2011 - Present}{Large scale email system maintenance}{}{}{}{
+This project is to maintain a large scale e-mail service to a top leader telecom company in Japan.\newline
+The maintainence consists of develop new features, expanding new services, support new clients, fix exsisted bugs and more.
+As the customer's company grows and the mobile clients change -- feature phone to smart phone, lots of works should be done to provide more better service to the end users. The project itself will keep on going.
+As a core member in the project, I have attended almost all develop sub-projects with 50 colleagues, from Japan and China, these years.
+The main role I acts is technical leader and bridge software engineer.
+As a technial leader, I leads 10 colleagues to do the develoment using c and Perl.
+As a bridge software engineer. I discuss the requirement definnition with the Japanese colleagues, make investments, write system specifications and communicates with Chinese colleagues. Reduce the cost by cultural differnce.
+After hard works in the past three years, the whole system is eventually switch from a old-and-customized protocal based system to a opensource based scalable system.
+}
+\subsection{@From software}
+\cventry{Mar 2010 - Dec 2010}{Sony PSP action game}{}{}{}{
+It's a relaxation action game based on the Monster Hunter Series.
+I've made the fishing part, title part and common libraries with a twenty people team.
+It's written with PSP SDK (c++), a complete 3D game.
+}
+\cventry{Apr 2008 - May 2009}{Nintendo DS adventure game}{}{}{}{
+It's an adventure game based on a very famous detective novel, Kindaichi series.
+I've made small games like crossword, quiz, newspapers and some of common libraries to this game.
+It's written with Nintendo DS SDK (c++), almost a 2D game but with some 3D techniques.
+This game have got the Famitsu five star award.
+}
+\cventry{Oct 2007 - Mar 2010}{Game development tools maintenance}{}{}{}{
+My responsibility is to maintain several internal use game development tools, from 3D modeling, resouce management to game event maker. To add new features meet the requirement to the game designer and fix bugs. These tools also differs from languages, mainly using c++ and visual basic.
+}
+\subsection{@Venus software}
+\cventry{May 2007 - Sept 2007}{Document management tool}{}{}{}{
+Add new document format to a existed document management tool.
+}
+\cventry{Aug 2006 - May 2007}{Document encryption tool}{}{}{}{
+Extend functions to a existed encryption tool. This tool encrypts Office documents with a mechanism which authenticate from local network.
+}
+\cventry{Jun 2005 - Aug 2006}{Housing management system}{}{}{}{
+Port a whole system written in VisualBasic to Java.
+}
+\cventry{Nov 2004 - Jun 2005}{Farming management system}{}{}{}{
+Develop a farming management system using Java, Tomcat and Oracle.
+}
+\cventry{Sept 2004 - Nov 2004}{Banking system}{}{}{}{
+Write common functions. Using Virtual C++.
+}
+\cventry{Jul 2004 - Spet 2004}{Protocal test tools}{}{}{}{
+Develop a tool to test a customed network protocal.
+}
+
+\section{Interests}
+\cvlistitem{cycling}
+\cvlistitem{audio}
+
+%\section{其他 1}
+%\cvlistitem{项目 1}
+%\cvlistitem{项目 2}
+%\cvlistitem{项目 3}
+
+%\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+%
+%\section{其他 2}
+%\cvlistdoubleitem{项目 1}{项目 4}
+%\cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+%\cvlistdoubleitem{项目 3}{}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+%\clearpage
+%%-----       letter       ---------------------------------------------------------
+%% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+%
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+%
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+%
+%\makeletterclosing
+
+
+\clearpage\end{CJK}
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
