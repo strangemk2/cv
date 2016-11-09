@@ -17,35 +17,41 @@
 \usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
 \usepackage{CJKutf8}
 
-% 调整页面出血
+% 调整页面
 \usepackage[scale=0.8]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
+\recomputecvlengths
 %\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
 
 % 个人信息
 \firstname{Juanjie}
 \familyname{Xi}
 \title{Curriculum Vitae}                    % 可选项、如不需要可删除本行
-%\address{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}{XXXXXXXXXXXXXXXXXXXXXX}      % 可选项、如不需要可删除本行
-%\mobile{XXXXXXXXXXXXXXXXXXX}                  % 可选项、如不需要可删除本行
-\address{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}{XXXXXXXXXXXXXXXXXXXXXXX}      % 可选项、如不需要可删除本行
-\mobile{XXXXXXXXXXXXXXXXXXX}                  % 可选项、如不需要可删除本行
-%\phone{XXXXXXXXXXXXXXXXXX}                   % 可选项、如不需要可删除本行
-%\fax{XXXXXXXXXXXXXXXX}                       % 可选项、如不需要可删除本行
-\email{XXXXXXXXXXXXXXXXXXXX}                  % 可选项、如不需要可删除本行
-%\homepage{XXXXXXXXXXXXX}                      % 可选项、如不需要可删除本行
+%\address{Room 603, 3-22-11, Ryoukoku, Sumida-ku}{Tokyo, Japan 〒130-0026}      % 可选项、如不需要可删除本行
+%\mobile{(+81) 080-8155-6536}                  % 可选项、如不需要可删除本行
+%\address{Room 303, building 67, Guangyuan new village, Yangpu-district}{Shanghai, China 〒200093}      % 可选项、如不需要可删除本行
+\mobile{(+86) 136-1194-1185}                  % 可选项、如不需要可删除本行
+%\phone{(+86) 021-65668510}                   % 可选项、如不需要可删除本行
+%\fax{+3~(456)~789~012}                       % 可选项、如不需要可删除本行
+\email{void@v2mail.net}                       % 可选项、如不需要可删除本行
+%\homepage{www.pm525.com}                      % 可选项、如不需要可删除本行
 %\extrainfo{附加信息 (可选项)}                % 可选项、如不需要可删除本行
-\photo[64pt][0.4pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\photo[64pt][0.4pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
 \quote{Summary\newline{}
 \small
 \begin{itemize}
-\item 10 years experience in software engineering.
-\item Trilingual, speak Chinese, Japanese and English.
-\item Management experience for a 12 person group.
-\item Good skill at c/c++, Perl, Linux/Unix system admin.
-\item Strong domain knowledge in email system.
-\item Experience in the game industry.
-\item Very well team work spirit.
+\item 10+yrs of Software Development experience using C/C++, Perl
+\item Good knowledge of Data Structures, Algorithms and Design Patterns
+\item Experienced in TCP/IP and multithreading
+\item Strong background in system administration
+\item Extensive in-depth UNIX experience (HP/UX, Linux, OS X)
+\item Strong domain knowledge in email system
+\item Management experience for a 10 person group
+\item Trilingual, speak Chinese, Japanese and English
+\item Experience in the game industry
+%\item 12 years experience in software engineering.
+%\item Good skill at C, C++, Perl, Linux/Unix system admin.
+%\item Very well team work spirit.
 \end{itemize}
 \normalsize
 }                         % 可选项、如不需要可删除本行
@@ -68,18 +74,19 @@
 \section{Info}
 \cvline{Birth}{\small Aug 28th, 1982 (Shanghai)\normalsize}
 \cvline{Citizenship}{\small Chinese\normalsize}
-\cvline{LinkedIn}{\small \url{http://cn.linkedin.com/in/xijuanjie}\normalsize}
+%\cvline{LinkedIn}{\small \url{http://cn.linkedin.com/in/xijuanjie}\normalsize}
+%\cvline{Github}{\small \url{https://github.com/strangemk2}\normalsize}
 %\cvline{Blog}{\small \url{<Link to profile>}\normalsize}
 %\cvline{Skype}{\small <skype>\normalsize}
 
 \section{Experience}
-\cventry{Jan 2011 - Present}{Technical leader}{HP}{Tokyo/Shanghai}{}{}
+\cventry{Jan 2011 - Present}{Technical leader}{HP}{Shanghai/Tokyo}{}{}
 \cventry{Oct 2007 - Dec 2010}{Programmer}{From Software}{Tokyo}{Japan}{}
 \cventry{Jul 2004 - Aug 2007}{Software Engineer}{Venus Software}{Shanghai}{China}{}
 
 \section{Computer Skills}
-\cvcomputer{Languages}{c, c++, Perl, common lisp, php}{DB}{sqlite, Mysql, MariaDB}
-\cvcomputer{Platforms}{Debian, Redhat, Gentoo, HP-UX, Mac os x, Windows, postfix, dovecot, apache, nginx}{Tools}{vim, eclipse, clang, make, git, Mercurial, SVN, *nix binutils}
+\cvcomputer{Languages}{c, c++, Perl, Python, php}{DB}{sqlite, mysql}
+\cvcomputer{Platforms}{Debian, Gentoo, Redhat, HP/UX, OS X, Windows, postfix, dovecot, apache, nginx}{Tools}{vim, eclipse, clang, git, Mercurial, subversion, trac, redmine, *nix binutils}
 
 \section{Education}
 \cventry{2000 - 2004}{Building Environment and Equipment Engineering}{Bachelor}{University of Shanghai for Science and Technology}{Shanghai}{}  % 第3到第6编码可留白
@@ -108,20 +115,20 @@
 & Listening & Reading & Interaction & Production & \\
 \end{tabular}
 
-\vspace{3mm}
-%lvl should be in this range A1 < A2 < B1 < B2 < C1 < C2
-\cvlanguage{Mandarin}{native}{
-	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
-		A & A & A & A & A
-	\end{tabular}}
-\cvlanguage{Japanese}{bilingual}{
-	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
-		A & A & A & B & B
-	\end{tabular}}
-\cvlanguage{English}{working proficiency}{
-	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
-		B & B & C & C & B
-	\end{tabular}}
+%\vspace{3mm}
+%%lvl should be in this range A1 < A2 < B1 < B2 < C1 < C2
+%\cvlanguage{Mandarin}{native}{
+%	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+%		A & A & A & A & A
+%	\end{tabular}}
+%\cvlanguage{Japanese}{bilingual}{
+%	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+%		A & A & A & B & B
+%	\end{tabular}}
+%\cvlanguage{English}{working proficiency}{
+%	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+%		B & B & C & C & B
+%	\end{tabular}}
 
 \section{Certifications}
 \cvitemwithcomment{LPIC Level1}{}{December 2009}
@@ -134,20 +141,100 @@
 %\cvline{JLPT 1}{August 2007}
 
 \section{Test Scores}
-\cvline{TOEIC}{765}
+\cvline{TOEIC}{840}
 
 \section{Projects}
 \subsection{@HP}
 \cventry{Jan 2011 - Present}{Large scale email system maintenance}{}{}{}{
-This project is to maintain a large scale email service to a top leader telecom company in Japan.\newline
-The maintenance consists of develop new features, expanding new services, support new clients, fix existed bugs and more.
-As the customer's company grows and the mobile clients change -- from feature phone to smart phone, lots of works should be done to provide better services to the end users. The project itself will keep on going.
-As a core member in the project, I have attended almost all develop sub-projects with 50 colleagues, from Japan and China, these years.
+This project is to maintain a large scale email service for a top leader Japanese telecom company.\\
+The maintenance consists of develop features, expanding services, support new clients, fix existed bugs and more.
+As the customer's grows and the way we use email changes these years, lots of works should be done to provide better services to the end users. The project itself will keep on going.
+As a core member in the project, I have attended almost all develop sub-projects with 20 colleagues, from Tokyo and Shanghai.\\
 The main role I acts is technical leader and bridge software engineer.
-As a technical leader, I leads a 10 colleagues group to do the development using c and Perl.
-As a bridge software engineer. I discuss the requirement definition with the Japanese colleagues, make investments, write system specifications and communicates with Chinese colleagues. Reduce the cost by cultural difference.
-After hard works in the past three years, the whole system is eventually switch from a old-and-customized protocol based system to a opensource based scalable system.
+As a technical leader, I leads a max 10 colleagues group to do the development using c/c++ and Perl.
+As a bridge software engineer. I discuss the requirement definition with the Japanese colleagues, do technical investigation, write system specifications and communicates with Chinese colleagues. Reduce the cost by cultural difference.\\
+\\
+\underline{Below is the main sub-project I've done these years from recent to remote.}
 }
+\cventry{}{Technical investigation of next generation mail system}{}{}{}{
+  \begin{itemize}
+  \item Do investigation in various aspects for our next generation email system. This consist of evaluate a new core email server to replace old one run in nonstop from functionality and stability, consider about data migration, service maintenance, influence to other sub systems... etc.
+  \item As tech leader, do investigation, write technical documents and make prototypes.
+  \item dovecot, nginx, email-mx
+  \end{itemize}
+}
+\cventry{}{Telecom data statistics}{}{}{}{
+  \begin{itemize}
+  \item Telecom data statistics, the architecture is changed several times to meet the customer's performance requirement, finally this tool become a simple hand-made distributed framework.
+  \item As this project is reletively small, I have done all of the procedure except integration test.
+  \item Perl, hand-made distributing system
+  \end{itemize}
+}
+\cventry{}{Porting from hp/ux to recent linux}{}{}{}{
+  \begin{itemize}
+  \item Porting c program from hp/ux to recent linux. Because the architecture is also changed, some extra script have been made to make everything work fine.
+  \item As tech leader, do communication with customer, do technical investigation, arrange schedule and code review.
+  \item c, linux, hp/ux, porting between different architecture.
+  \end{itemize}
+}
+\cventry{}{Caching system for imap server}{}{}{}{
+  \begin{itemize}
+  \item Make a caching machanism to old mail servers. This machanism help old server get 10 times faster in specific imap command.
+  \item As programmer, coding for imap protocal analyzer and code review.
+  \item c++, boost, asio, async, agile, ticket based development.
+  \end{itemize}
+}
+\cventry{}{Zimbra to local server migration}{}{}{}{
+  \begin{itemize}
+  \item A daemon which migration data from zimbra to a customized mail server with high safty level. The challenge is how to recover the migration process in any error case, pridictable or unpredictable, to ensure the user data will never be lost.
+  \item As tech leader, I decide the architecture, do coding for main logic, do communication and code review.
+  \item c++11, git, zimbra, ldap, mysql, agile, ticket based development, automated testing.
+  \end{itemize}
+}
+\cventry{}{Webmail client}{}{}{}{
+  \begin{itemize}
+  \item To provide a webmail client to existed email server. This project is not developed from scratch, but use a existed webmail client as baseline, then do lots of customize, especially UI and interface between servers.
+  \item As tech leader, I do the very first investigation, choose lectotype, make architecture, decide interface between exsited system, choose development method with customer, do comunication and code review during the project.
+  \item postfix, dovecot, mysql, php, nginx, php-fpm, openid, agile, ticket based development.
+  \end{itemize}
+}
+\cventry{}{Log processing system}{}{}{}{
+  \begin{itemize}
+  \item The corresponding log processing system to the proxy. The core idea in log processing. unifying log interface, monitor for special event, statistics for desire data, real time log collector.
+  \item As team leader, do communication with customer, arrange schedule, code review and do some of the coding.
+  \item Perl, idea of deal with logs.
+  \end{itemize}
+}
+\cventry{}{Customized imap proxy}{}{}{}{
+  \begin{itemize}
+  \item The proxy system consists of three parts: proxy, directory, mds. While proxy does proxies between client and server, directory act as an custom authentication server, and mds stands for "mail deliver server".
+  \item As programmer, I made a parser to the customized command and encoding convert part of proxy.
+  \item c, socket, thread pool, codepage.
+  \end{itemize}
+\bigskip
+\underline{The following is across all of these sub-projects.}
+}
+\cventry{}{Scripts for system admin and maintenance}{}{}{}{
+  \begin{itemize}
+  \item Lot's of scripts should be made to meet the maintanence requirement, turn around time measure, ldap updater, service monitor, log rotater/mover etc...
+  \item Perl, automation.
+  \end{itemize}
+}
+\cventry{}{Operation and maintenance}{}{}{}{
+  \begin{itemize}
+  \item Do release process for customer with Japanese collegues.
+  \item make detail operation process document, recovery document. do operations on customers business server.
+  \item mature operation process with less risk.
+  \end{itemize}
+}
+\cventry{}{Server administration}{}{}{}{
+  \begin{itemize}
+  \item Administrate different servers used in project. 
+  \item install os, daily updates, backup, etc...
+  \item hp/ux, linux, virtual machines, version control system, trac, backup.
+  \end{itemize}
+}
+
 \subsection{@From software}
 \cventry{Mar 2010 - Dec 2010}{Sony PSP action game}{}{}{}{
 It's a relaxation action game based on the Monster Hunter Series.
@@ -155,8 +242,8 @@ I've made the fishing part, title part and common libraries with a twenty people
 It's written with PSP SDK (c++), a complete 3D game.
 }
 \cventry{Apr 2008 - May 2009}{Nintendo DS adventure game}{}{}{}{
-It's an adventure game based on a very famous Japanese detective fiction, Kindaichi series.
-I've made small games, crossword, quiz, newspapers and some of common libraries, and the part from game title to game entry.
+It's an adventure game based on a famous Japanese detective fiction, Kindaichi series.
+I've made casual games part like crossword, quiz, newspapers, some of common libraries, and game title part.
 It's written with Nintendo DS SDK (c++), almost a 2D game but with some 3D techniques.
 This game have got the Famitsu five star award.
 }
@@ -181,7 +268,6 @@ I've finally mastered the whole system and become a core developer to extend enc
 It's originally a large scale system used by Japanese government apart for housing management written by visual basic.
 The customer have a request to renew this system from C/S model to B/S model.
 Finally this project become an attempt for port the original visual basic system to a Java based web system.
-As it's a large system, I have work with a 60 people team together.
 As a result, the project is very successful and get a reward from customer.
 }
 \cventry{Nov 2004 - Jun 2005}{Farming management system}{}{}{}{
@@ -191,20 +277,34 @@ This project using Java, Tomcat and Oracle.
 \cventry{Sept 2004 - Nov 2004}{Banking system}{}{}{}{
 It's a very old banking system written by c++ run under Windows NT 3.5.
 To meet the requirement of expanding business, some base functions should be re-written more efficiently.
-I try to re-write them and get 2 times faster than before.
 }
 \cventry{Jul 2004 - Spet 2004}{Protocol test tool}{}{}{}{
 It's a simply customized network protocol test tool, also my first project.
 I've used c++ ,socket, and multithread on this tool.
 }
 
-\section{Interests}
-\cvlistitem{cycling}
-\cvlistitem{audio}
+%\section{Interests}
+%\cvlistitem{cycling}
+%\cvlistitem{igo}
+
+%\section{Interestsaa}
+%\cvitem{hobby 1}{Descripci\'on}
+%\cvitem{hobby 2}{Descripci\'on}
+%\cvitem{hobby 3}{Descripci\'on}
+%
+%\section{Conocimientos de computaci\'on}
+%\cvdoubleitem{categor\'ia 1}{XXX, YYY, ZZZ}{categor\'ia 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{categor\'ia 2}{XXX, YYY, ZZZ}{categor\'ia 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{categor\'ia 3}{XXX, YYY, ZZZ}{categor\'ia 6}{XXX, YYY, ZZZ}
+
+
 
 \section{Addition}
 \cvlistitem{
-I have managed a bbs website for more than 10 years. From infrastructure to contents. At the peak time, the bbs have hundred thousands register users in all.
+I am currently running a small e-mail service serves hundreds of users.
+}
+\cvlistitem{
+I have maintained a bbs site for more than 10 years, from infrastructure to contents. At the peak time, the bbs have hundred thousands register users in all.
 }
 
 %\section{其他 1}
@@ -255,7 +355,6 @@ I have managed a bbs website for more than 10 years. From infrastructure to cont
 %\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
 %
 %\makeletterclosing
-
 
 \clearpage\end{CJK}
 \end{document}
