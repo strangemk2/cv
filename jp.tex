@@ -18,7 +18,7 @@
 
 \usepackage{setspace}
 
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.75,bmargin=2cm,tmargin=2cm,lmargin=2cm,rmargin=2cm]{geometry}
 \recomputelengths
 \recomputecvlengths
 \setlength{\hintscolumnwidth}{2.7cm}
@@ -32,20 +32,21 @@
 \mobile{(+86) 136-1194-1185}
 %\phone{(+86) 021-65668510}
 %\fax{+3~(456)~789~012}
-\email{void@v2mail.net}
+\email{strangemk3@yahoo.co.jp}
 %\homepage{www.pm525.com}
 %\extrainfo{附加信息 (可选项)}
 %\photo[64pt][0.4pt]{picture}   % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
 \quote{概要\newline{}
 \small
 \begin{itemize}
-\item 12年渡りソフトウェア開発について全般的な経験
+\item 10年以上c/c++, Perlによるソフトウェア開発について全般的な経験
+\item データ構造、アルゴリズム、デザインパターンについて良好な知識
+\item TCP/IP、マルチスレッドによるネットワークプログラミング経験
+\item システム管理と*nixについて豊富な経験
+\item 大型emailシステムのドメイン知識
+\item 10人までチームの管理経験
 \item トリリンガルで、中国語、日本語、英語を話せる
-\item 10人チームの管理経験
-\item C++, Perl, Linux/Unix得意
-\item 大型E-mailシステムについて豊富な知識
-\item ゲーム業界の経験
-%\item Very well team work spirit.
+%\item ゲーム業界の経験
 \end{itemize}
 \normalsize
 }
@@ -55,23 +56,23 @@
 \maketitle
 
 \section{個人情報}
-\cvline{名前}{奚\ 雋杰}
+\cvline{名前}{奚\ 隽杰}
 \cvline{カタカナ}{\small ケイ\ シュンケツ\normalsize}
 \cvline{誕生日}{1982-08-28 (上海)}
 \cvline{国籍}{中国}
 %\cvline{LinkedIn}{\small \url{http://cn.linkedin.com/in/xijuanjie}\normalsize}
-%\cvline{Github}{\small \url{https://github.com/strangemk2}\normalsize}
+\cvline{Github}{\small \url{https://github.com/strangemk2}\normalsize}
 %\cvline{Blog}{\small \url{<Link to profile>}\normalsize}
 %\cvline{Skype}{\small <skype>\normalsize}
 
 \section{経歴}
-\cventry{2011/01 - 今}{Tech リーダー}{ヒューレット・パッカード}{上海/東京}{}{}
+\cventry{2011/01 - 今}{Tech リーダー}{ヒューレット・パッカード・エンタープライズ}{上海/東京}{}{}
 \cventry{2007/10 - 2010/12}{プログラマー}{フロム・ソフトウェア}{東京}{日本}{}
 \cventry{2004/07 - 2007/08}{ソフトウェアエンジニア}{啓明ソフトウェア}{上海}{中国}{}
 
 \section{技術}
 \cvcomputer{言語}{C++, Perl, Python, php}{DB}{sqlite, mysql}
-\cvcomputer{プラットホーム}{Debian, Gentoo, Redhat, HP/UX, OS X, Windows, postfix, dovecot, apache, nginx}{ツール}{vim, eclipse, clang, git, Mercurial, subversion, trac, redmine, *nix binutils}
+\cvcomputer{プラットホーム}{Gentoo, Debian, Redhat, FreeBSD, OS X, Windows, postfix, dovecot, apache, nginx}{ツール}{vim, eclipse, clang, git, Mercurial, subversion, trac, redmine, *nix binutils}
 
 \section{教育}
 \cventry{2000 - 2004}{建築環境と設備工程}{学士}{上海理工大学}{上海}{}  % 第3到第6编码可留白
@@ -125,155 +126,220 @@
 \cvline{TOEIC}{840}
 
 \section{プロジェクト}
-\subsection{@ヒューレットパッカード}
-\cventry{2011/01 - 今}{大規模E-mailシステムのメンテナンス}{}{}{}{
-このプロジェクトは日本の大手通信会社の大規模E-mailシステムのメンテナンスである。\\
-メンテナンス自体は新しい機能の開発、サービス追加、新端末の対応、既存バグ修正などで含まれる。
-この数年の間、E-mailの使い方が大幅に変わったので、色々な調整、対応を行っている。
+\subsection{@ヒューレット・パッカード・エンタープライズ}
+\cventry{2011/01 - 今}{大規模emailシステムのメンテナンス}{}{}{}{
+大手通信会社の大規模emailシステム メンテナンス。
+新しい機能の開発、サービス追加、新端末の対応、既存バグ修正などを含まれる。
+この数年の間emailの使い方が大幅に変わったので、それに対して各変更。
 プロジェクトのコアメンバーとして、ほとんどのサブプロジェクトを参加し、東京と上海に合わせて平均２０人のチームで働いてる。\\
-主な役割はTechリーダーとBSEである。
-Techリーダーとして、技術面はもちろん、最大１０人のチームを管理し、C, C++, Perlのプロジェクトは開発してきた。
-BSEとして、日本側のメンバーと仕様の相談、技術調査、仕様書作成、中国側とのコミュニケーションをやりました。言語、文化による違いがなるべく吸収してきた。\\
+主な役割はTechリーダー。
+技術面で、c++11, modern perl, 自動化テスト, vmware, openvz, docker, git, trac, agile、など開発手法、環境、技術を積極的に導入。開発まわりの技術調査、アーキテクチャ構築から実際のコーディングまで開発を進んでいる。
+管理面で、最大１０人のチームを管理し、作業内容、スケジュールの管理、仕様検討、作成、コミュニケーションなどをしている。\\
 \\
 \underline{主なサブプロジェクト}
 }
+\cventry{}{次期emailシステム検討}{}{}{}{
+  \begin{itemize}
+  \item 内容: お客さんの次期emailシステムに対しての技術検討。性能、安定性、メンテナンスの易さ、他システムへのインターフェースなどいろいろな方向で選定している。
+  \item 担当: Techリーダーとして、技術調査、プロトタイプ作成
+  \item 技術: dovecot, nginx, email-mx
+  \end{itemize}
+}
 \cventry{}{ネットワーク構造可視化}{}{}{}{
   \begin{itemize}
-  \item 本番環境にある数千台サーバーの可視化、経路検索を行うシステム。一から作るシステムであり、新しい技術群を導入しています。本システムの導入により、商用作業の障害数は半分以下に減りました。今もニーズを応えてどんどん新機能を追加しています。
-  \item アーキテクチャとして要求分析からシステム全体の設計、サーバー側の実装を行いました。
-  \item Perl, NoSql, Restful interface, javascript, html5, 自動化ツール
+  \item 内容: 本番環境にある数千台サーバーの可視化、経路検索を行うシステム。比較的に新しい技術群を導入しています。本システムの導入により、商用作業の障害数は半分以下に減りました。
+  \item 担当: アーキテクチャとして要求分析からシステム全体の設計、サーバー側の実装。
+  \item 技術: Perl, NoSql, Restful interface, javascript, html5, 自動化ツール
   \end{itemize}
 }
 \cventry{}{通信データ統計ツール}{}{}{}{
   \begin{itemize}
-  \item 通信データ統計ツール。パフォーマンスのため、複数回全体のアーキテクチャを変わったことがあった。最終的に簡単なの分散式処理フレームワークになった。
-  \item 小さいプロジェクトなので、IT試験以外全部やりました。
-  \item Perl, 手作り分散式フレームワーク
+  \item 内容: 通信データ統計ツール。パフォーマンスのため、複数回全体のアーキテクチャを変わったことがあった。最終的に手作りの分散式処理フレームワークになった。
+  \item 担当: 小さいプロジェクトなので、全フェース担当した。
+  \item 技術: Perl, 手作り分散式フレームワーク
   \end{itemize}
 }
 \cventry{}{Linuxへのポーティング}{}{}{}{
   \begin{itemize}
-  \item 古いhp/uxで動くcプログラムは今現在のlinuxにポーティングするプロジェクト。OS変更とともに、ハードウェア、ソフトウェア両方のアーキテクチャに変更があったので、ソースコードの改修もあった。
-  \item Techリーダーとして、仕様のやり取り、技術調査、仕事の振り分けとコードレビューをやりました。
-  \item c, linux, hp/ux, ポーティング
+  \item 内容: hp/uxで動くcプログラムは今現在のlinuxにポーティングするプロジェクト。OS変更とともに、ハードウェア、ソフトウェア両方のアーキテクチャに変更があったので、ソースコードの改修もあった。
+  \item 担当: Techリーダーとして、仕様検討、技術調査、仕事の振り分けとコードレビュー。
+  \item 技術: c, linux, hp/ux, ポーティング
   \end{itemize}
 }
 \cventry{}{IMAPキャッシュ}{}{}{}{
   \begin{itemize}
-  \item 既存の古いimapサーバーの前にキャッシュサーバーを構える。特定のimapコマンドで10倍近く早くなった効果が得た。
-  \item プログラマーとして、imapプロトコルのアナライザーとコードレビューをやりました。
-  \item C++, boost, asio, async, アジャイル
+  \item 内容: 既存のimapサーバーの前にキャッシュサーバーを構える。特定のimapコマンドで10倍近く早くなった効果が得た。
+  \item 担当: プログラマーとして、imapプロトコルのアナライザーとコードレビュー。
+  \item 技術: C++, boost, asio, async, アジャイル
   \end{itemize}
 }
-\cventry{}{Zimbraからのメールデータ移行}{}{}{}{
+\cventry{}{Zimbraメールデータ移行}{}{}{}{
   \begin{itemize}
-  \item Zimbraから既存のメールサーバーへのデータ移行デーモン サービス。移行自体だけではなく、あらゆるエラー状況でリカバリできるのもポイントである。
-  \item Techリーダーとして、全体のアーキテクチャ、メインロジックのコーディング、仕様のやり取りとコードレビューまでやりました。
-  \item C++11, git, zimbra, ldap, mysql, アジャイル, 自動化テスト
+  \item 内容: Zimbraから既存のメールサーバーへのデータ移行するプログラム。移行自体だけではなく、あらゆる状況でもリカバリできるのはポイントである。
+  \item 担当: Techリーダーとして、アーキテクチャ選定、メインロジックのコーディング、仕様検討とコードレビュー。
+  \item 技術: C++11, git, zimbra, ldap, mysql, agile, 自動化テスト
   \end{itemize}
 }
 \cventry{}{WEBメール}{}{}{}{
   \begin{itemize}
-  \item 既存メールシステムにWEBメールの機能を提供するプロジェクト。一から開発ではなく、製品を使っていろいろカスタマイズをした。特に既存システムとのインターフェースとUI関連。
-  \item Techリーダーとして、技術調査、製品選定、アーキテクチャ設計、既存システムとのインターフェース設計、開発方式選定、仕様のやり取り、とコードレビューをやりました。
-  \item postfix, dovecot, mysql, php, nginx, php-fpm, openid
+  \item 内容: 既存メールシステムにWEBメールの機能を提供する。Atmailという製品をベースに既存システムとのインターフェースとUI関連を追加した。
+  \item 担当: Techリーダーとして、技術調査、製品選定、アーキテクチャ設計、既存システムとのインターフェース設計、開発方式選定、仕様検討とコードレビュー。
+  \item 技術: postfix, dovecot, mysql, php, nginx, php-fpm, openid
   \end{itemize}
 }
 \cventry{}{ログ処理システム}{}{}{}{
   \begin{itemize}
-  \item プロキシを対応するログ処理システム。ログ処理の中心として、インターフェースの統一、特殊イベントの監視、重要情報の統計、リアルタイム収集 を実装した。
-  \item チームリーダーとして、仕様のやり取り、仕事の振り分け、スケジュールの調整、コードレビューと一部のコーディングをやりました。
-  \item Perl, 大規模ログ処理
+  \item 内容: プロキシに対応するログ処理システム。ログ処理の中心として、インターフェースの統一、特殊イベントの監視、重要情報の統計、リアルタイム収集を実装した。
+  \item 担当: チームリーダーとして、仕様検討、仕事振り分、スケジュール調整、コードレビューと一部のコーディング。
+  \item 技術: Perl, 大規模ログ処理
   \end{itemize}
 }
 \cventry{}{IMAPプロキシ}{}{}{}{
   \begin{itemize}
-  \item 性能とメンテナンスの易さを考慮して、既存のimapサーバーにプロキシ レイヤーを追加する。プロキシは本体、情報検索するためのdirectory、送信するためのmds、三つの部分で構成してる。
-  \item プログラマーとして、プロキシ内部のコマンドの解析と文字コード変換をやりました。
-  \item c, socket, スレッドプール, コードページ
+  \item 内容: 性能とメンテナンスの易さを考慮し、既存のimapサーバーにプロキシ レイヤーを追加する。プロキシは本体、情報検索するためのdirectory、送信するためのmds、三つの部分で構成してる。
+  \item 担当: プログラマーとして、内部コマンドの解析と文字コード変換の実装。
+  \item 技術: c, socket, スレッドプール, コードページ
   \end{itemize}
 \bigskip
 \underline{その他}
 }
 \cventry{}{システム管理のためのスクリプト}{}{}{}{
   \begin{itemize}
-  \item TAT時間測定、ldapアップデート、サービス監視、ログ監視、ログ抽出など
-  \item Perl, 自動化
+  \item 内容: TAT時間測定、ldapアップデート、サービス監視、ログ監視、ログ抽出など。
+  \item 担当: チームリーダーとして、仕様検討、仕事振り分、スケジュール調整、コードレビューと一部のコーディング。
+  \item 技術: Perl, 自動化
   \end{itemize}
 }
 \cventry{}{運用とリリース}{}{}{}{
   \begin{itemize}
-  \item 日本チームとともに作ったプログラムをお客さん環境にリリース。
-  \item リリース手順書、リカバリー手順書などを作る。実際のリリースをする。
-  \item ヒューマンミスは最小限にするリリースプロセス
+  \item 内容: 日本チームとともに出来上がったプログラムをお客さん環境にリリース。
+  \item 担当: リリース手順書、リカバリー手順書を作る。実際のリリースをする。
+  \item 技術: ヒューマンミスは最小限にするリリースプロセス。
   \end{itemize}
 }
-\cventry{}{サーバー管理}{}{}{}{
+\cventry{}{システム管理}{}{}{}{
   \begin{itemize}
-  \item プロジェクトで使われる複数のサーバーを管理する
-  \item OSインストール、アップデート、バックアップなど
-  \item hp/ux, linux, virtual machines, version control system, trac, backup
+  \item 内容: チーム全体で使われるサーバーを管理する。
+  \item 担当: 物理サーバー管理、仮想サーバー導入、環境構築、アップデート、バックアップなど
+  \item 技術: linux, freeBSD, vmware, openvz, docker, svn, git
   \end{itemize}
 }
 
 \subsection{@フロムソフトウェア}
 \cventry{2010/05 - 2010/12}{PSPアクションゲーム}{}{}{}{
-モンハン日記 ぽかぽかアイルー村という作品です。
-フィッシング パーツ、一部のタイトルと共通ライブラリを作ってた。\\
-開発ツールはPSP SDK (C++)、完全な3Dゲームである。
+  \begin{itemize}
+  \item 内容: モンハン日記 ぽかぽかアイルー村という作品です。
+  \item 担当: フィッシング、一部のタイトルと共通ライブラリの開発
+  \item 技術: psp sdk, 3d
+  \end{itemize}
 }
 \cventry{2008/04 - 2009/05}{DSアドベンチャーゲーム}{}{}{}{
-金田一耕助シーリスをDSでゲーム化した初作品。
-ミニゲームのクロスワード、クイズ、新聞とゲームタイトルと共通ライブラリを作ってた。\\
-開発ツールはDS SDK (C++)、ほとんど2Dゲーム、一部(タイトルなど)は3Dを使ってた。
-このゲームはファミ通5点をもらった。
+  \begin{itemize}
+  \item 内容: 金田一耕助シーリスをDSでゲーム化した初作品。このゲームはファミ通5点をもらった。
+  \item 担当: ミニゲームのクロスワード、クイズ、新聞、ゲームタイトルと共通ライブラリの開発
+  \item 技術: ds sdk, 3d
+  \end{itemize}
 }
 \cventry{2007/10 - 2010/12}{ゲーム開発ツールのメンテナンス}{}{}{}{
-これは単独なプロジェクトではなく、ほかのゲームの開発とともに、一連の開発ツールをメンテナンスしてた。3D モデリング、リソース管理、ゲーム イベント管理など。
-企画の要望とおり機能を追加し、バグ修正などをやりました。\\
-主にC++とVisual Basicを使ってた。
+  \begin{itemize}
+  \item 内容: ゲーム開発における一連の開発ツールのメンテナンス。
+  \item 担当: 3D モデリング、リソース管理、イベント管理などツールの機能追加、バグ修正。
+  \item 技術: c++, vb
+  \end{itemize}
 }
 \subsection{@啓明ソフトウェア}
 \cventry{2007/05 - 2007/09}{文書管理システム}{}{}{}{
-独自のシステムで、企業で使われるすべての文書は中央文書管理サーバーに保存し、
-権限がもつ人だけ見る、編集する事ができる。\\
-C++ と mfc を使って、新しいドキュメントフォマットの対応をやりました。
+  \begin{itemize}
+  \item 内容: 管理サーバーによるセントラル文書管理。
+  \item 担当: 新ドキュメントの対応。
+  \item 技術: c++, mfc
+  \end{itemize}
 }
 \cventry{2006/08 - 2007/05}{文書暗号化システム}{}{}{}{
-中央認証機能が持つ文書暗号化システム。
-このシステムは認証サーバーとドキュメント フォーマット毎のプラグインでできてるので、
-C++, Visual Basic, vba, java, tomcat, jsp など複数な技術を使われる。\\
-短時間でこのシステムを把握し、コアメンバーとして新しい暗号化アルゴリズムの追加や
-新ドキュメント フォーマットの対応なのをやりました。
+  \begin{itemize}
+  \item 内容: 中央認証機能が持つ文書暗号化システム。多数の技術を使われる。
+  \item 担当: 暗号化アルゴリズムの追加と新ドキュメントの対応
+  \item 技術: c++, vb, vba, java, tomcat, jsp
+  \end{itemize}
 }
 \cventry{2005/06 - 2006/08}{住宅公団用管理システム}{}{}{}{
-元々日本住宅公団用の管理システムで、リニューアルのため C/S モデルから B/S
-モデルへ変わるとの要望がありました。\\
-結局は元々の Visual Basic で作ったシステムは Java ベースの web 系システムに移植した。
-このプロジェクトは大成功であり、お客さんからの表彰を受けた。
+  \begin{itemize}
+  \item 内容: 日本住宅公団用の管理システム。vb で作ったシステムを java ベースの web 系システムに移植。
+  \item 担当: 開発移植。このプロジェクトはお客さんからの表彰を受けた。
+  \item 技術: java, vb
+  \end{itemize}
 }
 \cventry{2004/11 - 2005/06}{農場管理システム}{}{}{}{
-農場管理用システム。\\
-主にJava, Tomcat と Oracleを使ってた。
+  \begin{itemize}
+  \item 内容: 農場管理用システム。
+  \item 担当: システム開発
+  \item 技術: java, tomcat, oracle
+  \end{itemize}
 }
-\cventry{2004/09 - 2004/11}{銀行システムインフラ}{}{}{}{
-Windows NT 3.5 で動くC++で作った古い銀行システム。\\
-インフラの仕様変更で改修を行いました。改修後は２倍近く性能が得てきた。
+\cventry{2004/09 - 2004/11}{銀行システム}{}{}{}{
+  \begin{itemize}
+  \item 内容: Windows NT 3.5 で動く c++ で作った古い銀行システム。
+  \item 担当: 基盤改修。改修後は２倍近く性能が得てきた。
+  \item 技術: c++
+  \end{itemize}
 }
-\cventry{2004/07 - 2004/09}{通信プロトコル テスト ツール}{}{}{}{
-簡単なネットワーク通信プロトコルを試験するためのツール、初プロジェクトでもある。\\
-主にC++, socketとマルチスレッドを使ってた。
+\cventry{2004/07 - 2004/09}{プロトコル試験ツール}{}{}{}{
+  \begin{itemize}
+  \item 内容: ネットワーク通信プロトコル試験ツール。
+  \item 担当: ツール開発
+  \item 技術: c++, socket, multithread
+  %\item[abc] with custom bullet
+  %\item[] without bullet
+  \end{itemize}
 }
 
 \section{その他}
 \cvlistitem{
-数百ユーザ向けの個人E-mailサービスは提供している。
+複数ユーザ向けの個人emailとshadowsocksサービスを提供している。
 }
 \cvlistitem{
-十年以上に渡り個人のポケモン関連掲示板を運営していた。
-掲示板の構築から内容までほとんど一人でやっていた。
-当時の登録ユーザー数は二十万までありました。
+十年以上に渡り構築から内容まで個人のポケモン掲示板を運営しました。
+当時は二十万以上の登録ユーザー数がありました。
 }
+
+%\section{自己PR}
+%\cvitem{}{我是一个怎么样的人。}
+%
+%\cvitem{}{
+%喜欢新技术
+%c++11, modern perl, python3...
+%nosql, memcache
+%}
+%
+%\cvitem{}{
+%喜欢编程
+%算法，各种编程范式，functional programming
+%}
+%
+%\cvitem{}{
+%喜欢折腾系统，机器
+%linux, freebsd, hpux, 各种windows
+%vmware, virtualbox, kvm, openvz, docker
+%}
+%
+%\cvitem{}{
+%喜欢开源界
+%可惜和外面的互动并不多
+%github,
+%bug report: vim
+%}
+%
+%\cvitem{}{
+%喜欢学习
+%edx class
+%machine learning, alpha go
+%}
+%
+%\cvitem{}{
+%写各种方便的小程序
+%monte carlo 模拟股票交易
+%}
+
 
 \nocite{*}
 \bibliographystyle{plain}
