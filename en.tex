@@ -6,358 +6,141 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,roman]{moderncv}
 
-% moderncv 主题
-\moderncvstyle{classic}                       % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
-\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
-%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+%\nopagenumbers{}
 
-% 字符编码
-\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage[utf8]{inputenc}
 \usepackage{CJKutf8}
 
-% 调整页面
 \usepackage[scale=0.8]{geometry}
-\recomputelengths                             % required when changes are made to page layout lengths
+\recomputelengths
 \recomputecvlengths
-%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+%\setlength{\hintscolumnwidth}{3cm}
 
-% 个人信息
+%====================
+% Personal information
+%====================
 \firstname{Juanjie}
 \familyname{Xi}
-\title{Curriculum Vitae}                    % 可选项、如不需要可删除本行
-%\address{Room 603, 3-22-11, Ryoukoku, Sumida-ku}{Tokyo, Japan 〒130-0026}      % 可选项、如不需要可删除本行
-%\mobile{(+81) 080-8155-6536}                  % 可选项、如不需要可删除本行
-%\address{Room 303, building 67, Guangyuan new village, Yangpu-district}{Shanghai, China 〒200093}      % 可选项、如不需要可删除本行
-\mobile{(+86) 136-1194-1185}                  % 可选项、如不需要可删除本行
-%\phone{(+86) 021-65668510}                   % 可选项、如不需要可删除本行
-%\fax{+3~(456)~789~012}                       % 可选项、如不需要可删除本行
-\email{void@v2mail.net}                       % 可选项、如不需要可删除本行
-%\homepage{www.pm525.com}                      % 可选项、如不需要可删除本行
-%\extrainfo{附加信息 (可选项)}                % 可选项、如不需要可删除本行
-%\photo[64pt][0.4pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\title{Curriculum Vitae}
+%\address{xxxxxxxxxx}{xxxxxxxxxx}
+\mobile{070-4497-3481}
+%\phone{xxxxxxxxxx}
+%\fax{xxxxxxxxxx}
+\email{strangemk3@gmail.com}
+%\homepage{www.pm525.com}
+%\extrainfo{附加信息 (可选项)}
+%\photo[64pt][0.4pt]{picture}
 \quote{Summary\newline{}
 \small
 \begin{itemize}
-\item 10+yrs of Software Development experience using C/C++, Perl
-\item Good knowledge of Data Structures, Algorithms and Design Patterns
-\item Experienced in TCP/IP and multithreading
+\item 15+yrs experience of Software Development Life Cycle
+\item Engineering Manager of group max to 15 people
+\item Extensive in-depth Linux experience
 \item Strong background in system administration
-\item Extensive in-depth UNIX experience (HP/UX, Linux, OS X)
-\item Strong domain knowledge in email system
-\item Management experience for a 10 person group
+\item Good knowledge of Data Structures, Algorithms and Design Patterns
+\item Strong domain knowledge in email technology
+\item Experienced in TCP/IP and multithreading
 \item Trilingual, speak Chinese, Japanese and English
-\item Experience in the game industry
-%\item 12 years experience in software engineering.
-%\item Good skill at C, C++, Perl, Linux/Unix system admin.
-%\item Very well team work spirit.
+%\item Experience in the game industry
 \end{itemize}
 \normalsize
-}                         % 可选项、如不需要可删除本行
+}
 
-% 显示索引号;仅用于在简历中使用了引言
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-
-% 分类索引
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            内容
-%----------------------------------------------------------------------------------
+%====================
+% Content
+%====================
 \begin{document}
-\begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
+\begin{CJK}{UTF8}{gbsn}
 \maketitle
 
-\section{Info}
-\cvline{Birth}{\small Aug 28th, 1982 (Shanghai)\normalsize}
-\cvline{Citizenship}{\small Chinese\normalsize}
-%\cvline{LinkedIn}{\small \url{http://cn.linkedin.com/in/xijuanjie}\normalsize}
-%\cvline{Github}{\small \url{https://github.com/strangemk2}\normalsize}
-%\cvline{Blog}{\small \url{<Link to profile>}\normalsize}
-%\cvline{Skype}{\small <skype>\normalsize}
+%\section{Experience}
+%\cventry{Aug 2017 - Present}{Manager}{Rakuten}{Tokyo}{Japan}{}
+%\cventry{Jan 2011 - Jul 2017}{Technical leader}{HP}{Shanghai/Tokyo}{}{}
+%\cventry{Oct 2007 - Dec 2010}{Programmer}{From Software}{Tokyo}{Japan}{}
+%\cventry{Jul 2004 - Aug 2007}{Software Engineer}{Venus Software}{Shanghai}{China}{}
+
+\section{Skills}
+\cvcomputer{Languages}{C++, Perl, Python, Java}{DB}{mysql, sqlite}
+\cvcomputer{Platforms}{Gentoo, Debian, Redhat, FreeBSD, nginx, postfix, redis, k8s, kafka}{Tools}{vim, clang, git, trac, jira, binutils}
 
 \section{Experience}
-\cventry{Jan 2011 - Present}{Technical leader}{HP}{Shanghai/Tokyo}{}{}
-\cventry{Oct 2007 - Dec 2010}{Programmer}{From Software}{Tokyo}{Japan}{}
-\cventry{Jul 2004 - Aug 2007}{Software Engineer}{Venus Software}{Shanghai}{China}{}
+\subsection{@Rakuten}
+\cventry{Aug 2017 - Present}{Engineering manager}{}{}{}{
+Lead a 13 member group to provide messageing delivary service to entire Rakuten to send billions of multiple channle messeges to our end customer every month.
+Maily focus on emails but also send messages for other platform. We are the most significant email sender in Japan.
+Achievements include "Refresh MTA infrastructures", "New delivery platform provide better interface, triple performance", "Email security projects", etc...
+}
 
-\section{Computer Skills}
-\cvcomputer{Languages}{c, c++, Perl, Python, php}{DB}{sqlite, mysql}
-\cvcomputer{Platforms}{Debian, Gentoo, Redhat, HP/UX, OS X, Windows, postfix, dovecot, apache, nginx}{Tools}{vim, eclipse, clang, git, Mercurial, subversion, trac, redmine, *nix binutils}
-
-\section{Education}
-\cventry{2000 - 2004}{Building Environment and Equipment Engineering}{Bachelor}{University of Shanghai for Science and Technology}{Shanghai}{}  % 第3到第6编码可留白
-\cventry{1996 - 2000}{Shanghai Jianshe high school}{}{}{Shanghai}{}  % 第3到第6编码可留白
-
-%\cventry{年 -- 年}{学位}{院校}{城市}{\textit{成绩}}{说明}
-
-%\section{毕业论文}
-%\cvitem{题目}{\emph{题目}}
-%\cvitem{导师}{导师}
-%\cvitem{说明}{\small 论文简介}
-
-\clearpage
-
-%Section
-\section{languages}
-
-\hspace{25mm}\small Self-assessment level from A to E (A maximum evaluation)\normalsize
-\vspace{5mm}
-
-\begin{tabular}{p{67mm} p{40mm} p{40mm} p{20mm}}
-& \textbf{Understanding} & \textbf{Speaking} & \textbf{Writing} \\
-\end{tabular}
-
-\begin{tabular}{p{67mm} p{20mm} p{20mm} p{20mm} p{20mm} p{20mm}}
-& Listening & Reading & Interaction & Production & \\
-\end{tabular}
-
-%\vspace{3mm}
-%%lvl should be in this range A1 < A2 < B1 < B2 < C1 < C2
-%\cvlanguage{Mandarin}{native}{
-%	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
-%		A & A & A & A & A
-%	\end{tabular}}
-%\cvlanguage{Japanese}{bilingual}{
-%	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
-%		A & A & A & B & B
-%	\end{tabular}}
-%\cvlanguage{English}{working proficiency}{
-%	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
-%		B & B & C & C & B
-%	\end{tabular}}
-
-\section{Certifications}
-\cvitemwithcomment{LPIC Level1}{}{December 2009}
-\cvitemwithcomment{LPIC Level2}{}{March 2013}
-\cvitemwithcomment{Senior Programmer}{(China national certification)}{October 2006}
-\cvitemwithcomment{JLPT 1}{}{August 2007}
-%\cvline{LPIC Level1}{December 2009}
-%\cvline{LPIC Level2}{March 2013}
-%\cvline{Senior Programmer}{October 2006}
-%\cvline{JLPT 1}{August 2007}
-
-\section{Test Scores}
-\cvline{TOEIC}{840}
-
-\section{Projects}
 \subsection{@HP}
-\cventry{Jan 2011 - Present}{Large scale email system maintenance}{}{}{}{
-This project is to maintain a large scale email service for a top leader Japanese telecom company.\\
-The maintenance consists of develop features, expanding services, support new clients, fix existed bugs and more.
-As the customer's grows and the way we use email changes these years, lots of works should be done to provide better services to the end users. The project itself will keep on going.
-As a core member in the project, I have attended almost all develop sub-projects with 20 colleagues, from Tokyo and Shanghai.\\
-The main role I acts is technical leader and bridge software engineer.
-As a technical leader, I leads a max 10 colleagues group to do the development using c/c++ and Perl.
-As a bridge software engineer. I discuss the requirement definition with the Japanese colleagues, do technical investigation, write system specifications and communicates with Chinese colleagues. Reduce the cost by cultural difference.\\
-\\
-\underline{Below is the main sub-project I've done these years from recent to remote.}
-}
-\cventry{}{Technical investigation of next generation mail system}{}{}{}{
-  \begin{itemize}
-  \item Do investigation in various aspects for our next generation email system. This consist of evaluate a new core email server to replace old one run in nonstop from functionality and stability, consider about data migration, service maintenance, influence to other sub systems... etc.
-  \item As tech leader, do investigation, write technical documents and make prototypes.
-  \item dovecot, nginx, email-mx
-  \end{itemize}
-}
-\cventry{}{Telecom data statistics}{}{}{}{
-  \begin{itemize}
-  \item Telecom data statistics, the architecture is changed several times to meet the customer's performance requirement, finally this tool become a simple hand-made distributed framework.
-  \item As this project is reletively small, I have done all of the procedure except integration test.
-  \item Perl, hand-made distributing system
-  \end{itemize}
-}
-\cventry{}{Porting from hp/ux to recent linux}{}{}{}{
-  \begin{itemize}
-  \item Porting c program from hp/ux to recent linux. Because the architecture is also changed, some extra script have been made to make everything work fine.
-  \item As tech leader, do communication with customer, do technical investigation, arrange schedule and code review.
-  \item c, linux, hp/ux, porting between different architecture.
-  \end{itemize}
-}
-\cventry{}{Caching system for imap server}{}{}{}{
-  \begin{itemize}
-  \item Make a caching machanism to old mail servers. This machanism help old server get 10 times faster in specific imap command.
-  \item As programmer, coding for imap protocal analyzer and code review.
-  \item c++, boost, asio, async, agile, ticket based development.
-  \end{itemize}
-}
-\cventry{}{Zimbra to local server migration}{}{}{}{
-  \begin{itemize}
-  \item A daemon which migration data from zimbra to a customized mail server with high safty level. The challenge is how to recover the migration process in any error case, pridictable or unpredictable, to ensure the user data will never be lost.
-  \item As tech leader, I decide the architecture, do coding for main logic, do communication and code review.
-  \item c++11, git, zimbra, ldap, mysql, agile, ticket based development, automated testing.
-  \end{itemize}
-}
-\cventry{}{Webmail client}{}{}{}{
-  \begin{itemize}
-  \item To provide a webmail client to existed email server. This project is not developed from scratch, but use a existed webmail client as baseline, then do lots of customize, especially UI and interface between servers.
-  \item As tech leader, I do the very first investigation, choose lectotype, make architecture, decide interface between exsited system, choose development method with customer, do comunication and code review during the project.
-  \item postfix, dovecot, mysql, php, nginx, php-fpm, openid, agile, ticket based development.
-  \end{itemize}
-}
-\cventry{}{Log processing system}{}{}{}{
-  \begin{itemize}
-  \item The corresponding log processing system to the proxy. The core idea in log processing. unifying log interface, monitor for special event, statistics for desire data, real time log collector.
-  \item As team leader, do communication with customer, arrange schedule, code review and do some of the coding.
-  \item Perl, idea of deal with logs.
-  \end{itemize}
-}
-\cventry{}{Customized imap proxy}{}{}{}{
-  \begin{itemize}
-  \item The proxy system consists of three parts: proxy, directory, mds. While proxy does proxies between client and server, directory act as an custom authentication server, and mds stands for "mail deliver server".
-  \item As programmer, I made a parser to the customized command and encoding convert part of proxy.
-  \item c, socket, thread pool, codepage.
-  \end{itemize}
-\bigskip
-\underline{The following is across all of these sub-projects.}
-}
-\cventry{}{Scripts for system admin and maintenance}{}{}{}{
-  \begin{itemize}
-  \item Lot's of scripts should be made to meet the maintanence requirement, turn around time measure, ldap updater, service monitor, log rotater/mover etc...
-  \item Perl, automation.
-  \end{itemize}
-}
-\cventry{}{Operation and maintenance}{}{}{}{
-  \begin{itemize}
-  \item Do release process for customer with Japanese collegues.
-  \item make detail operation process document, recovery document. do operations on customers business server.
-  \item mature operation process with less risk.
-  \end{itemize}
-}
-\cventry{}{Server administration}{}{}{}{
-  \begin{itemize}
-  \item Administrate different servers used in project. 
-  \item install os, daily updates, backup, etc...
-  \item hp/ux, linux, virtual machines, version control system, trac, backup.
-  \end{itemize}
+\cventry{Jan 2011 - Jul 2017}{Software engineer}{}{}{}{
+Maintain a large scale email service for a top leader Japanese mobile carrier.
+The maintenance includes develop new features, expanding services, support new clients, fix bugs and more.
+As a core member in the project, attended almost all develop sub-projects with 20 members, from Tokyo and Shanghai.
+As technical leader, lead a max 10 member group to do the development using c/c++ and Perl.
+As bridge software engineer. Discuss the requirement with the Japanese colleagues, do technical investigation, write system specifications and communicates with Chinese colleagues. Reduce the cost by cultural difference.
 }
 
 \subsection{@From software}
-\cventry{Mar 2010 - Dec 2010}{Sony PSP action game}{}{}{}{
-It's a relaxation action game based on the Monster Hunter Series.
-I've made the fishing part, title part and common libraries with a twenty people team.
-It's written with PSP SDK (c++), a complete 3D game.
-}
-\cventry{Apr 2008 - May 2009}{Nintendo DS adventure game}{}{}{}{
-It's an adventure game based on a famous Japanese detective fiction, Kindaichi series.
-I've made casual games part like crossword, quiz, newspapers, some of common libraries, and game title part.
-It's written with Nintendo DS SDK (c++), almost a 2D game but with some 3D techniques.
-This game have got the Famitsu five star award.
-}
-\cventry{Oct 2007 - Dec 2010}{Game development tools maintenance}{}{}{}{
-It's not a single product, but to maintenance a serials of internal game development tools, from 3D modeling, resource management to game event maker.
-Add new features to meet the requirements from the game designer and fix bugs.
-These tools also differs from languages, mainly c++ but also have some visual basic.
+\cventry{Oct 2007 - Dec 2010}{Game programmer}{}{}{}{
+Worked as game programmer and game tool programmer.
+As game programmer, develped two titles in DS and PSP, both with 3D programming.
+As tool programmer, develped and maintained a serials of internal game development tools, from 3D modeling, resource management to game event maker.
 }
 \subsection{@Venus software}
-\cventry{May 2007 - Sept 2007}{Document management system}{}{}{}{
-It's a document management system to help companies manage there documents in a safer way.
-Documents will be registered to an internal server and only who could authenticate by the server should see that document.
-I've add new document formats support to the document viewer, using c++ and mfc.
-}
-\cventry{Aug 2006 - May 2007}{Document encryption system}{}{}{}{
-It's a document encryption tool with a central authenticate mechanism.
-This tool consists of a authenticate server, a series of plugin for MS Office and Adobe Acrobat reader.
-Techniques used by this tool various from c++, visual basic, vba, java, tomcat, jsp, etc.
-I've finally mastered the whole system and become a core developer to extend encrypt functions and add better file format supports.
-}
-\cventry{Jun 2005 - Aug 2006}{Housing management system}{}{}{}{
-It's originally a large scale system used by Japanese government apart for housing management written by visual basic.
-The customer have a request to renew this system from C/S model to B/S model.
-Finally this project become an attempt for port the original visual basic system to a Java based web system.
-As a result, the project is very successful and get a reward from customer.
-}
-\cventry{Nov 2004 - Jun 2005}{Farming management system}{}{}{}{
-It's a system that help farmers manage their crops in a visualized way.
-This project using Java, Tomcat and Oracle.
-}
-\cventry{Sept 2004 - Nov 2004}{Banking system}{}{}{}{
-It's a very old banking system written by c++ run under Windows NT 3.5.
-To meet the requirement of expanding business, some base functions should be re-written more efficiently.
-}
-\cventry{Jul 2004 - Spet 2004}{Protocol test tool}{}{}{}{
-It's a simply customized network protocol test tool, also my first project.
-I've used c++ ,socket, and multithread on this tool.
+\cventry{Jul 2004 - Sept 2007}{Software engineer}{}{}{}{
+Experienced of various type of application development. Covered by Java application, TCP/IP, multithreading, C++ application.
 }
 
-%\section{Interests}
-%\cvlistitem{cycling}
-%\cvlistitem{igo}
+\section{Education}
+\cventry{2000 - 2004}{Building Environment and Equipment Engineering}{Bachelor}{University of Shanghai for Science and Technology}{Shanghai}{}
+
+\section{Certifications}
+%\cvitemwithcomment{LPIC Level1}{}{December 2009}
+%\cvitemwithcomment{LPIC Level2}{}{March 2013}
+\cvitemwithcomment{Senior Programmer}{(China national certification)}{October 2006}
+\cvitemwithcomment{JLPT 1}{}{August 2007}
+
+\section{Tests}
+\cvline{TOEIC}{840}
+
+\section{Interests}
+\cvlistitem{Cycling}
+\cvlistitem{Igo}
 
 %\section{Interestsaa}
 %\cvitem{hobby 1}{Descripci\'on}
-%\cvitem{hobby 2}{Descripci\'on}
-%\cvitem{hobby 3}{Descripci\'on}
 %
 %\section{Conocimientos de computaci\'on}
 %\cvdoubleitem{categor\'ia 1}{XXX, YYY, ZZZ}{categor\'ia 4}{XXX, YYY, ZZZ}
-%\cvdoubleitem{categor\'ia 2}{XXX, YYY, ZZZ}{categor\'ia 5}{XXX, YYY, ZZZ}
-%\cvdoubleitem{categor\'ia 3}{XXX, YYY, ZZZ}{categor\'ia 6}{XXX, YYY, ZZZ}
 
 
-
-\section{Addition}
+\section{Personal projects}
 \cvlistitem{
-I am currently running a small e-mail service serves hundreds of users.
+Running a small e-mail service for personal use.
 }
 \cvlistitem{
-I have maintained a bbs site for more than 10 years, from infrastructure to contents. At the peak time, the bbs have hundred thousands register users in all.
+Maintained a bbs site for more than 10 years, from infrastructure to contents. At the peak time, the bbs have hundred thousands register users in all.
 }
 
-%\section{其他 1}
-%\cvlistitem{项目 1}
-%\cvlistitem{项目 2}
-%\cvlistitem{项目 3}
+\section{Info}
+%\cvline{Birth}{\small Aug 28th, 1982 (Shanghai)\normalsize}
+\cvline{LinkedIn}{\small \url{http://cn.linkedin.com/in/xijuanjie}\normalsize}
+\cvline{Github}{\small \url{https://github.com/strangemk2}\normalsize}
+%\cvline{Blog}{\small \url{<Link to profile>}\normalsize}
+%\cvline{Skype}{\small <skype>\normalsize}
 
-%\renewcommand{\listitemsymbol}{-}             % 改变列表符号
-%
-%\section{其他 2}
-%\cvlistdoubleitem{项目 1}{项目 4}
-%\cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
-%\cvlistdoubleitem{项目 3}{}
 
 % 来自BibTeX文件但不使用multibib包的出版物
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
 \nocite{*}
 \bibliographystyle{plain}
-\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
-
-% 来自BibTeX文件并使用multibib包的出版物
-%\section{出版物}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+\bibliography{publications}
 
 %\clearpage
-%%-----       letter       ---------------------------------------------------------
-%% recipient data
-%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-%\date{January 01, 1984}
-%\opening{Dear Sir or Madam,}
-%\closing{Yours faithfully,}
-%\enclosure[Attached]{curriculum vit\ae{}}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-%\makelettertitle
-%
-%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
-%
-%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
-%
-%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-%
-%Albert Einstein discovered that $e=mc^2$ in 1905.
-%
-%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
-%
-%\makeletterclosing
 
 \clearpage\end{CJK}
 \end{document}
-
-
-%% 文件结尾 `template-zh.tex'.
